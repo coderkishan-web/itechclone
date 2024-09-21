@@ -1,0 +1,291 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.active{
+  color: #2e3f8d;
+  border-bottom: 1px solid #2e3f8d;
+}
+div{
+  text-align: center;
+}
+.dropdown{
+  display: none;
+  /* animation: .3s  ease-in downfall ; */
+  overflow: hidden;
+  z-index: 4;
+}
+.navhover:hover .dropdown{
+  display: block;
+  
+  }
+  .navbars{
+    z-index: 9999;
+  }
+ 
+  .navbars li{
+    position: relative;
+    animation: 1.8s  ease-in downfall ;
+    animation-delay: .2s;
+  }
+  .navbars li:hover{
+    color: black;
+  animation: 1.8s  ease-in downfall , bounce 2s linear;
+
+  }
+  .navbars p{
+padding: .1rem 2rem;
+    font-size: 1rem;
+  }
+  .navbars p:hover{
+    color: white;
+    background-color:#2e3f8d;
+  }
+  
+  /* logo */
+.logo{
+  position: relative;
+  animation: 2s  ease-in-out rightfall, bounce 2s infinite;
+  animation-delay: .2s;
+  transition: transform 0.2s;
+}
+.contactnumber{
+  position: relative;
+  animation: 1.7s  ease-in-out leftfall ;
+  animation-delay: .2s;
+
+}
+.contactnumber:hover{
+  animation: bounce 2s infinite,1.7s  ease-in-out leftfall ;
+
+}
+.placedimage{
+  position: relative;
+  animation: 1.7s  ease-in-out fadeIn ;
+  animation-delay: 1s;
+}
+.animcard{
+  position: relative;
+  width: 400px;
+  height: 300px;
+  padding: 10px 50px;
+  margin: 2px;
+  border: 1px solid rgb(43, 41, 41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.192);
+  backdrop-filter: blur(10px);
+  transition:0.3s;
+  outline: none;
+
+}
+.animcard:hover{
+  outline: 1px solid #2e3f8d;
+  border-radius: 10px;
+  animation:  bounce 2s linear infinite;
+
+}
+.animcard h1{
+  font-size: 1.5rem;
+  color: #2e3f8d;
+  font-weight: 900;
+}
+.animcard p{
+  font-size: 1rem;
+  text-align: center;
+}
+#spancircle{
+  animation:  bounce 2s linear infinite;
+
+}
+form{
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+form input{
+  margin: .6rem;
+  background-color: rgb(36, 35, 35);
+  border: none;
+  outline: 1px solid rgb(31, 30, 30);
+  padding: 1px;
+}
+.container{
+  width: 100%;
+  
+  margin: 2rem auto;
+  clip-path: polygon(0 0, 100% 29%, 100% 100%, 0 85%);
+}
+.footer{
+  clip-path: polygon(0 0, 100% 20%, 100% 99%, 0% 100%);
+  background-image: linear-gradient(to right, #231222, #212686);
+}
+.abt{
+  border: 2px solid #212686;
+}
+.abt h1{
+  height: 100%;
+  background-color: #212686;
+  clip-path: polygon(15% 0, 100% 0%, 81% 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.card:hover{
+  animation: bounce 2s linear infinite;
+}
+.ourteam{
+  background-color: #172554;
+  clip-path: polygon(11% 0, 100% 9%, 92% 100%, 0% 100%);
+
+}
+.titlecourse{
+  background-image: url(https://lh4.googleusercontent.com/24RyEuj0tVIFx3kJSbMu10sByT3NjTYp5Qpu98REOM90ul8DCeBmXA_YDL9osSPgUHbe1-OKORNVmFCWn-1zLovvDk0HL4PcR-ppr9Zt0DPnwfDJqblnB07BZlwJvsX7TbuTuufa4upqGmIIrUwkChA);
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+.design{
+  width: 100%;
+  height: 50vh;
+  background-color: #172554;
+  margin-top: -5rem;
+  clip-path: polygon(50% 0%, 82% 7%, 100% 0, 100% 31%, 63% 35%, 45% 39%, 26% 38%, 0 30%, 0 1%, 21% 11%);
+}
+.courses{
+  margin-top: -9rem;
+  
+}
+.add{
+  background-image: linear-gradient(to right, #231222, #212686);
+
+}
+.compcards{
+  outline: 1px solid #212686 ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: 1.8s  ease-in downfall ;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.compcards:hover {
+  outline: 3px solid #212686 ;
+  transform: scale(0.9);
+  box-shadow: 0 8px 50px #212686;
+  cursor: pointer;
+  background-color: #2e3f8d;
+
+}
+.centershead{
+  background-image: url(https://www.appliedglobal.com/wp-content/uploads/blog-images/command-control-center-ultimate-guide-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.blog{
+  background-image: url(https://www.searchenginejournal.com/wp-content/uploads/2020/08/7-ways-a-blog-can-help-your-business-right-now-5f3c06b9eb24e.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.imgsetecent{
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.cpntactbox{
+  z-index: 999;
+}
+.box {
+margin: 0 auto;
+  transition: 0.5s ease-in-out; 
+  animation:fadeIn .3s   ease-in forwards ;
+
+}
+.wp {
+  margin: 0 auto;
+    transition: 0.5s ease-in-out; 
+    animation:fadeIn .3s   ease-in forwards ;
+    z-index: 99;  
+  }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes downfall {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    top: -100px;
+    
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+   top: 0px;
+  }
+}
+@keyframes rightfall {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    left: -200px;
+    
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+   left: 0px;
+  }
+}
+@keyframes leftfall {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    right: -500px;
+    
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+   right: 0px;
+  }
+}
